@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+
+<body>
+	<form action="https://formspree.io/anna.kaludzinska@gmail.com" method="post"></form>
+
+	<label for="wplata">Wpłata w PLN:</label>
+	<br />
+	<input type="number" name="Wpłata" id="wplata" placeholder="0">
+	<br />
+
+	<p>
+		<label for="kapitalizacja">Okres kapitalizacji:</label>
+		<select name="Okres kapitalizacji" id="kapitalizacja">
+			<option value="12">Miesięczny</option>
+			<option value="4">Kwartalny</option>
+			<option value="1">Roczny</option>
+		</select>
+		<br />
+	</p>
+
+	<label for="stopa">Stopa zwrotu w %:</label>
+	<br />
+	<input type="number" name="Stopa zwrotu" id="stopa" placeholder="0">
+	<br />
+
+	<label for="lata">Liczba lat:</label>
+	<br />
+	<input type="number" name="Liczba lat" id="lata" placeholder="0">
+	<br />
+
+	<p>
+		Podatek Belki:
+		<input type="checkbox" name="Podatek Belki (19%)" id="podatek" value="19%">
+		<label for="podatek"></label>
+	</p>
+	
+	<button value="Oblicz" id="btn">Oblicz</button>
+	
+	<script type="text/javascript" src="js/main.js"></script>
+
+
+</body>
+
+</html>
