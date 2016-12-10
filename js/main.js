@@ -4,13 +4,14 @@ document.getElementById("btn").addEventListener("click", calculateInterests);
 
 function calculateInterests() {
 
-	var ko = document.getElementById("wplata").value;
-	var r = document.getElementById("stopa").value / 100;
+	var ko = parseFloat(document.getElementById("wplata").value);
+	
+	var r = parseFloat(document.getElementById("stopa").value) / 100;
 
 	var e = document.getElementById("kapitalizacja");
 	var m = e.options[e.selectedIndex].value;
 
-	var n = document.getElementById("lata").value;
+	var n = parseInt(document.getElementById("lata").value);
 
 	var potega = n * m;
 
